@@ -109,6 +109,7 @@ section {
 
 body {
   line-height: 1;
+  background-color: #fff8ed;
 }
 
 ol,
@@ -125,7 +126,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 

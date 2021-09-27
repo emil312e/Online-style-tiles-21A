@@ -27,11 +27,12 @@ use the fonts in other ways in the font hierarchy etc. */
 
   --white-space: 1rem;
 
-  --bg-color: #000;
-  --link-color: #000;
-  --link-hover-color: #000;
-  --color-4: #000;
-  --color-5: #000;
+  --bg-color: #f35603;
+  --link-color: #fbdb82;
+  --link-hover-color: #a6af73;
+  --color-4: #b8b5d2;
+  --color-5: #ffffff;
+  --color-6: #fff8ed;
 
   --primary-font: sans-serif;
   --secondary-font: serif;
@@ -46,8 +47,7 @@ html {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+  height: 20vw;
 }
 
 header,
@@ -59,34 +59,40 @@ footer {
 }
 
 .full-width {
-  background: var(--bg-color);
+  background-color: #fff8ed;
   color: white;
   width: 100%;
 }
 
 .header-wrapper h1 {
-  font-size: 3rem;
+  font-size: 5.5rem;
   text-transform: uppercase;
-  letter-spacing: -2px;
+  letter-spacing: 4px;
   padding-right: 0.75em;
   font-weight: bold;
-  color: white;
+  color: black;
+  font-family: "Scheherazade New", serif;
 }
 
 .header-wrapper h2 {
-  font-size: 1.6em;
-  color: rgba(255, 255, 255, 0.95);
+  font-size: 2.6em;
+  color: black;
   font-weight: bold;
   margin: var(--white-space) 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Scheherazade New", serif;
 }
 
 .header-wrapper h3 {
   font-size: 1.2rem;
-  font-style: italic;
+  color: black;
+  font-family: "Scheherazade New", serif;
 }
 
-.header-wrapper h4 {
-  font-size: 0.8rem;
+.header-wrapper p {
+  padding-top: 2.5rem;
+  color: #f35603;
 }
 
 main {
@@ -99,10 +105,33 @@ section {
 }
 
 .section-heading {
-  font-style: italic;
-  font-size: 1.3rem;
-  color: #777;
-  margin: 0.5rem 0;
+  font-family: "Scheherazade New", serif;
+  font-size: 1.6rem;
+  color: black;
+  margin: 3.5rem 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 0.1rem;
+}
+
+.section-heading_2 {
+  font-family: "Scheherazade New", serif;
+  font-size: 1.6rem;
+  color: black;
+  margin: 3.5rem 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 8.3rem;
+}
+
+.section-heading_3 {
+  padding-top: 6.3rem;
+  font-family: "Scheherazade New", serif;
+  font-size: 1.6rem;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 1rem;
 }
 
 ul {
@@ -139,9 +168,12 @@ ul li:last-child {
 .color-swatch-5 {
   background-color: var(--color-5);
 }
-
+.color-swatch-6 {
+  background-color: var(--color-6);
+  border: solid;
+}
 .textures li {
-  height: 30vw;
+  height: 40vw;
   width: 40%;
   margin-right: 5vw;
 }
@@ -181,21 +213,18 @@ ul li:last-child {
 
 button {
   padding: 1rem;
-  border-radius: 4px;
-  background: var(--link-color);
+  background: #fff8ed;
   text-align: center;
   text-decoration: none;
-  font: bold 1.25em/1 var(--primary-font);
-  letter-spacing: 1px;
-  color: white;
+  font-family: "Scheherazade New", serif;
   text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
   transition: all 0.2s ease;
   cursor: pointer;
   /* margin: 0 1rem 0 0; */
 }
-
-.secondary-button {
+4 .secondary-button {
   background: var(--color-5);
 }
 
@@ -207,8 +236,7 @@ button:focus-within {
 }
 
 button:hover {
-  background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
+  background-color: #f35603;
 }
 
 button:active {
@@ -220,13 +248,12 @@ button:active {
 }
 
 .h1-sample {
-  font-size: 2.4rem;
-  font-weight: bold;
+  font-size: 1.4rem;
+  font-family: "Raleway", sans-serif;
 }
 
 .h2-sample {
-  font-family: var(--secondary-font);
-  font-style: italic;
+  font-family: "Raleway", sans-serif;
   font-size: 1.25rem;
 }
 
@@ -263,22 +290,72 @@ p[class*="font-details-"] {
   margin-top: 0.5rem;
   /* margin-bottom: calc(2 * var(--white-space)); */
   margin-bottom: var(--white-space);
-  font-size: 0.75rem;
-  font-family: var(--secondary-font);
-  color: #6f6f6f;
+  font-size: 1rem;
+  font-family: "Scheherazade New", serif;
+  color: black;
 }
 
 .adjectives ul {
-  font-size: 2rem;
-  opacity: 0.5;
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
 }
 
 .adjectives ul {
   flex-direction: column;
+  word-spacing: 2em;
 }
 
+.section-heading_4 {
+  font-family: "Scheherazade New", serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding-top: 3rem;
+}
+
+.section-heading_5 {
+  font-family: "Scheherazade New", serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+img {
+  padding: 1rem;
+}
+
+.adjectives p {
+  padding-top: 2.5rem;
+  color: #f35603;
+  margin-left: -39rem;
+}
+.fotostil img {
+  justify-content: space-between;
+  padding-top: 5rem;
+  flex-direction: row;
+  height: 23vw;
+  padding-left: 0.1rem;
+}
+
+.fotostil_2 img {
+  justify-content: space-between;
+  padding-top: 5rem;
+  flex-direction: row;
+  height: 18.5vw;
+  padding-left: 0.1rem;
+}
+
+.fotostil p {
+  padding-top: 18rem;
+  color: #f35603;
+  margin-left: -39rem;
+}
+.fotostil_2 p {
+  padding-top: 2.5rem;
+  color: #f35603;
+  margin-left: -39rem;
+}
 footer {
   font-style: italic;
+  color: black;
 }
 
 @media (min-width: 800px) {
@@ -286,6 +363,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 4rem;
+    background-color: #fff8ed;
   }
 
   .swatches li {
@@ -295,7 +373,7 @@ footer {
   }
 
   .textures li {
-    height: 15vw;
+    height: 23vw;
   }
 }
 
